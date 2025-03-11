@@ -1,0 +1,101 @@
+  <div class="mainpop">
+            <div class="mainh1"><H2>Popular albums and single</H2></div>
+         </div>
+         <div class="mainscroller"  id="pmaincard">
+            <div class="maincard">
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67616d00001e02f000fdbe92e9a1058034fd33" alt="" class="">
+                    <div class="popname"><span>Sanam Teri Kasam (Original Motion Picture Soundtrack)</span></div>
+                 </div>
+            </div>
+            <div class="maincard" >
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3"  alt="" class="">
+                    <div class="popname"><span></span></div>
+                 </div>
+            </div>
+            <div class="maincard">
+                <div class="card">
+                    <img  alt="" class="">
+                    <div class="popname"><span></span></div>
+                 </div>
+            </div>
+            <div class="maincard">
+                <div class="card">
+                    <img  alt="" class="">
+                    <div class="popname"><span></span></div>
+                 </div>
+            </div>
+            <div class="maincard">
+                <div class="card">
+                    <img  alt="" class="">
+                    <div class="popname"><span></span></div>
+                 </div>
+            </div>
+            <div class="maincard">
+                <div class="card">
+                    <img  alt="" class="">
+                    <div class="popname"><span></span></div>
+                 </div>
+            </div>
+            <div class="maincard">
+                <div class="card">
+                    <img  alt="" class="">
+                    <div class="popname"><span></span></div>
+                 </div>
+            </div>
+            <div class="maincard">
+                <div class="card">
+                    <img  alt="" class="">
+                    <div class="popname"><span></span></div>
+                 </div>
+            </div>  
+            <div class="maincard">
+                <div class="card">
+                    <img  alt="" class="">
+                    <div class="popname"><span></span></div>
+                 </div>
+            </div>
+            <div class="maincard">
+                <div class="card">
+                    <img  alt="" class="">
+                    <div class="popname"><span></span></div>
+                 </div>
+            </div>
+            <div class="maincard">
+                <div class="card">
+                    <img  alt="" class="">
+                    <div class="popname"><span></span></div>
+                 </div>
+            </div>
+            <div class="maincard">
+                <div class="card">
+                    <img  alt="" class="">
+                    <div class="popname"><span></span></div>
+                 </div>
+            </div>
+            <div class="maincard">
+                <div class="card">
+                    <img  alt="" class="">
+                    <div class="popname"><span></span></div>
+                 </div>
+            </div>
+            <div class="maincard">
+                <div class="card">
+                    <img  alt="" class="">
+                    <div class="popname"><span></span></div>
+                 </div>
+            </div>
+            <div class="maincard">
+                <div class="card">
+                    <img  alt="" class="">
+                    <div class="popname"><span></span></div>
+                 </div>
+            </div>
+            <div class="maincard">
+                <div class="card">
+                    <img  alt="" class="">
+                    <div class="popname"><span></span></div>
+                 </div>
+            </div>                                                        
+         </div> 

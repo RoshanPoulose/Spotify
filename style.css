@@ -1,0 +1,886 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+}
+body,html{
+    overflow-x: hidden;
+
+}  
+.fotbanner{
+    display: none;
+}       
+.popname span{
+    margin-top: 1px;
+   }
+.showall{
+    display: none;
+}
+.themainnav{
+    display: none;
+}
+.left{
+    display: none;
+}  
+@font-face {
+    font-family: rsize;
+    src: url(./font/SpotifyMixUI-Regular-cc3b1de388efa4cbca6c75cebc24585e.woff2);
+}
+@font-face {
+    font-family: bsize;
+    src: url(./font/SpotifyMixUI-Bold-4264b799009b1db5c491778b1bc8e5b7.woff2);
+}
+@font-face {
+    font-family: usize;
+    src: url(./font/SpotifyMixUITitleVariable-8769ccfde3379b7ebcadd9529b49d0cc.woff2);
+}
+@font-face {
+    font-family: psize;
+    src: url(./font/Poppins-Regular.ttf);
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    
+}
+
+body{
+    background-color: #000000;
+}
+
+nav{
+    padding: 0px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+    background-color: black;
+}
+.icon svg{
+    fill: white;
+    
+}
+.icons svg{
+    fill: white;
+   
+     
+}
+.mainicon{
+    margin-bottom: 4px;
+}
+.seach{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}    
+.iconsearch{
+    padding: 0px 16px;  
+    margin-top: 4px;  
+}
+.artist{
+    display: none;
+}
+.iconsearch svg{
+    height: 16px;
+    width: 16px;
+    fill: white;
+}
+.openapp{
+    border-radius: 9999px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0,0,0);
+    padding: 5px 16px 3px;
+    font-family: usize;
+    line-height: 24px;
+    font-size: 13px;
+    font-weight: 700;
+}
+.bar{
+    margin-left: 16px;
+    margin-top: 4px;
+}
+.bar svg{
+    height: 24px;
+    width: 24px;
+    fill: white;
+}
+.closebtn svg{
+    height: 24px;
+    width: 17px;
+ 
+}
+.subbanner{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 16px;
+    background-color :rgb(255, 205, 210);
+    padding-top: 88px;
+}
+.bannerh1{
+    color: rgb(0,0,0);
+    font-family: usize;
+    line-height: 39px;
+    font-size: 32px;
+    font-weight: 700;
+}
+.bannerh2{
+    margin-top: 1px;
+    color: rgb(0,0,0);
+    font-family: usize;
+    line-height: 22.4px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.bannerbtn{
+    border-radius: 9999px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0,0,0);
+    padding: 6px 16px  3px;
+    font-family: usize;
+    line-height: 24px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top:6px;
+    padding-top: 5px;
+    width: 111.53px;
+    text-align: center;
+
+}
+.closebtn{
+    position: absolute;
+    top: 69px;
+    right: 13px;
+}
+.mainh1{
+    padding: 0px 16px;
+    margin: 24px 0px 12px 0px;
+}
+.mainh1 h2{
+    color:white;
+    font-family: usize;
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.mainscroller{
+    display: flex;
+    overflow-x: scroll;
+    overflow: auto;
+}
+.mainscroller::-webkit-scrollbar{
+    display: none;
+}
+#pmaincard{
+    margin-left: 8px;
+}
+.maincard{
+    padding: 8px;
+    border-radius: 6px;
+
+}
+.card img{
+    aspect-ratio: 1/1;
+    border-radius: 4px;
+    width: 152px;
+    object-fit: cover;    
+}
+#rightcard{
+    margin-right: 8px;                 
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.popname span{
+    color: white;
+    font-family: usize; 
+    line-height: 22.4px;
+    font-size: 16px;
+    font-weight: 400;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    
+}
+#thegap{
+    margin-top: 22.4px;
+}
+
+footer{
+    padding: 8px 16px 40px;
+}
+.company{
+    margin: 32px 0px;
+    margin-bottom: 38px;
+}
+.companyh1{
+    font-family: usize;
+    line-height: 22.4px;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+.companyh2{
+    color:rgb(179, 179, 179);
+    font-family: usize;
+    line-height: 22.4px;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 8px 0px;
+}
+.social{
+    display: flex;
+    margin-bottom: 36px;
+    gap: 16px;
+   
+}
+.sbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(41, 41, 41);
+}
+.sbtn svg{
+    fill: rgb(179, 179, 179);
+    height: 16px;
+    width: 16px;
+}
+hr{
+    border: 0.5px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 22px;
+} 
+
+.legal{
+    display: flex;
+    padding-top: 16px;
+    flex-flow:  wrap;
+}  
+.legal span{
+    color:rgb(179, 179, 179);
+    font-family: usize;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 16px;
+    margin-bottom: 10px;
+}
+.c{
+    color:rgb(179, 179, 179);
+    font-family: usize;
+    line-height: 17.2px;
+    font-size: 14px;   
+    font-weight: 400;
+    padding-right:16px ;
+    margin-top: 0.5px;
+}        
+.english{    
+    display: flex;    
+    align-items: center;
+    position: relative;
+    width:97.7px ;
+    border-radius: 9999px;
+    border: 0.8px solid rgb(124, 124, 124);
+}
+.english svg{
+    width: 16px;
+    height: 16px;
+    fill:white ;
+    position: absolute;
+    left: 12px;
+}
+.english span{
+    color:white;
+    font-family: usize;
+    line-height: 28px;
+    font-size: 13px;
+    font-weight: 700;
+   padding: 2px 16px 0px 36px;
+}
+.theeng{
+    padding-top: 16px;
+}
+.icons{
+    display: none;
+}
+@media(min-width:375px){
+  .icons{
+    display: flex;
+    
+  }
+  .icon{
+    display: none;
+  }
+  .mainicon{
+    margin-bottom: 8px;
+  }
+} 
+@media(min-width:768px){
+    .footers{
+        display:      ; 
+        flex-direction: row;
+    justify-content: space-between; 
+    }                                           
+    .thecompanymain{
+        display: grid;
+        grid-template-columns: repeat(2,43.2%);
+         margin-bottom: 32px;      
+     }
+    .company{
+        margin-top: 32px;
+        margin-bottom: 0px;
+    }
+    .legal span{
+        margin-bottom: 8px;
+    }
+}                        
+@media(min-width:994px){
+    .footers{
+     display: flex ;  
+     flex-direction: row;
+     padding: 0px 16px;
+}                  
+.thecompanymain{
+    display: grid;
+    grid-template-columns: repeat(4,39%);
+     margin-bottom: 32px;      
+}      
+.social{
+    margin-top: 32px;
+}
+.theeng{
+    display: none;
+}
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    padding:0px 16px;
+
+}
+.c {
+    display: flex;
+    align-items: center;
+}
+}
+@media (min-width:1200px) {
+    .signfree{
+        margin-top: 2px;
+        padding: 8px 32px;
+        color:black;    
+        border-radius: 9999px;
+        font-family: bsize;
+        line-height: 32px;
+        font-size: 16px;
+        font-weight: 700;  
+         background-color: white;
+    }
+    .subbanner{
+        display: none;
+    }        
+    .icons{
+        position: absolute;
+        width: 72px;
+        height: 72px;
+        top:-4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .icons svg{
+        width: 32px;
+        height: 32px;
+    }
+    .themainnav{   
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: space-between;
+    }
+    nav{
+        display: none; 
+    }
+    .serachs{
+        display: flex;
+        align-items: center;
+    }
+    .homebtn{
+        padding: 12px;
+        margin-left: 8px;
+        background-color: rgb(31, 31, 31);
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+    }
+    .homebtn svg{
+        height: 20.89px;
+        width: 20px;
+        fill: white;
+    }
+    .what{
+        display: flex;
+        align-items: center;
+    }
+    .whats{
+        display: flex;
+        align-items: center;
+    }
+    .searchsub{
+        display: flex;
+        align-items: center;
+    }
+    .sicon svg{
+        height: 48px;
+        width: 48px;
+        fill:rgb(179, 179, 179);
+        padding: 4px 12px 0px 12px;
+      
+    }
+    .themainnav{
+        background-color: #000000;
+        height: 64px;
+        position: absolute;
+        top: 0px;
+        padding: 8px;
+    }
+    .homebtn svg{
+        height: 24px;
+        width: 24px;
+    }
+    .homebtn{
+        margin-left: 80px;
+    }
+    .premium{
+        margin-right: 151px;
+    }
+    .locks{
+        height: 48px; 
+        display: flex;
+        align-items: center;
+        margin-right: 12px;    
+    }
+    .locks svg{
+        height: 24px;
+        fill:rgb(179, 179, 179);
+        padding: 0px 4px 0px 12px;
+        border-left:0.8px solid rgb(179, 179, 179) ;
+    }
+    .whats{
+        background-color: rgb(31, 31, 31);
+        border-radius: 500px;
+        width: 474px;
+        display: flex;
+        margin: 0px 8px;
+        height: 48px;
+        justify-content: space-between;
+
+    }
+    .whatdo{
+        color:rgb(179, 179, 179);
+        font-family: usize;
+        line-height: 22.4px;
+        font-size: 16px;
+        font-weight: 400;
+        padding-top: 2px;
+    }
+    .whs{
+        display: flex;
+        align-items: center;
+    }
+
+    .pre1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+    .thmainsub{
+        display: flex;
+    }
+    .premh1{
+        padding: 8px 0px;
+        color:rgb(179, 179, 179);
+        font-family: usize;
+        line-height: 22.4px;
+        font-size: 16px;
+        font-weight: 700;
+        display: flex;
+    } 
+    #preid{
+        padding: 9px 0px 7px 0px;
+    }
+    #preh2{                   
+        padding: 4px 24px 4px 14px;
+        display: flex;
+        font-size: 14px;
+        align-items: center;
+        position: relative;
+        margin-left: 24px;
+    }
+    main{
+       margin:  25px 0px 12px 0px;
+    }
+    .mainh1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .showall{
+        display: flex;
+        color: rgb(179, 179, 179);
+         font-family: bsize;
+        line-height: 20px;
+        font-size: 14px;
+        padding-bottom: 2px;
+        font-weight: 700;
+        margin-bottom: -12px;
+        margin-right: 16px;
+    }
+    .mainh1 h2{
+        font-size: 24px;
+        line-height: 29px;
+        padding: 0px 8px;
+    }
+    #preh2 svg{
+        position: absolute;
+        left: -11px;
+        height: 16px;
+        width: 16px;
+        fill: rgb(179, 179, 179);
+        margin-right: 8px; 
+    }
+    .prebar{
+        width: 1px;
+        height: 24px;
+        margin: 16px; 
+        background-color: rgb(179, 179, 179);
+    }
+    .logsin{
+        color: black;
+        font-family: bsize;
+        line-height: 22.4px;
+        font-size: 16px;
+        font-weight: 700;
+        background-color: aliceblue;
+        border-radius: 9999px;
+        padding: 8px 32px 8px 32px;  
+        height: 48px; 
+        display: flex;
+        align-items: center;
+        margin-left: 8px;
+    }  
+    #fpre{
+        font-size: 14px;
+    }
+    .themainboss{
+        display: flex;
+        flex-direction: row;
+    }
+    .left{
+    display:flex ;
+    margin-top: 62px;
+    width: 420px;
+    background:rgb(18,18,18);
+       margin-left: 8px;
+       margin-right: 8px;
+       border-radius: 8px;
+    }
+   .boss{ 
+    margin-top: 62px;
+    border-radius: 8px;
+    height: 79.3vh;
+    scroll-behavior: smooth;
+    margin-right: 8px;
+    background-color: rgb(18,18,18);
+
+    overflow-y: scroll;
+   }
+   .lib{
+    display: flex;
+    width: 420px;
+    padding: 18px 16px 9px 24px;
+    justify-content: space-between; 
+   }
+   .lib1{
+    display: flex;
+    align-items: center;
+    color:rgb(179, 179, 179);
+    gap: 8px;
+    font-family: bsize;
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: 400;
+   }
+   .lib1 svg{
+    height: 24px;
+    width: 24px;
+    fill:rgb(179, 179, 179);
+   }
+   .plus{
+    height: 32px;
+    width: 32px;
+    padding: 8px;
+   }
+   .plus svg{
+    height: 16px;
+    width: 16px;
+    fill:rgb(179, 179, 179);
+   }
+   .thlib
+   {
+    height:76px ;
+   }    
+   .create{
+    padding:0px 8px 8px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+   }
+   .createsub{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 16px 20px;
+    margin: 8px 0px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background-color: rgb(31, 31, 31);
+   }
+   .create1{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+   }
+   .createh1{
+    color:rgb(255, 255, 255);
+    gap: 8px;
+    font-family: bsize;
+    line-height: 22px;
+    font-size: 16px;
+    font-weight: 700;
+   }
+   .createh2{
+    color:rgb(255, 255, 255);
+    font-family: rsize;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+   }
+   .playlist{
+    display: flex;
+    align-items: center;
+    padding: 4px 16px;
+    border-radius: 9999px;
+    background-color: rgb(255, 255, 255);
+    width: 125.55px;
+    height: 32px;
+    font-family: bsize;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+   }
+   #plays{
+    width: 142.39px;
+   }
+   #imga{
+       border-radius: 50%;
+       width: 153px;
+   }
+   .artist{
+        display: flex;
+        color:rgb(176, 176, 176);    
+        font-family: rsize;
+        line-height: 20px;
+        font-size: 14px;
+        font-weight: 400;     
+        margin-top: -5px;    
+   }            
+   .maincard{
+    margin-right: 8px;
+   }
+   #thegap{
+    margin-top: 46px;
+   }
+   .popname span{
+    margin-top: 1px;
+   }
+   #pmaincard{
+    margin-left: 16px;
+   }
+   .card img{
+    width: 153px;
+   }
+   #thelegal{
+    display: none;
+   }
+   .maincard{
+    width: 177px;
+   }
+   .createmai{
+    position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 38%;
+   }
+   .glo svg{
+        height: 16px;
+        width: 16px; 
+   }
+   .legal{
+    margin: 24px 0px;
+    padding:0px 24px ;
+  
+   }
+   .golb{
+    margin-bottom: 32px ;
+    padding:0px 36px ;
+   }
+   .cokkies{
+    color:rgb(176, 176, 176);    
+        font-family: rsize;
+        line-height: 15px;
+        font-size: 11px;
+        font-weight: 400;  
+        margin-bottom: 14px;
+        margin-right: 16px;  
+        
+        
+   }
+   .fotbanner{
+    display: flex;
+}  
+   .cok{
+    transform: translateY(-25px);
+    color:rgb(255, 255, 255);
+    padding:0px 24px ;
+    font-family: rsize;
+    line-height: 15px;
+    font-size: 12px;
+    font-weight: 400;  
+    margin-bottom: 8px;
+    margin-right: 16px;     
+   }
+   .golb{
+    display: flex;
+   }
+   .glo{
+    display: flex;
+    align-items: center;
+    margin-right: -28px;
+    fill: rgb(255, 255, 255);
+   }
+   .englishs{
+        padding: 8px 6px 4px 36px;
+        color: rgb(255, 255, 255);
+        font-family: bsize;
+        line-height: 15px;
+        font-size: 14px;
+        font-weight: 400;  
+        height: 32px;
+        width: 100px;
+        border-radius: 9999px;
+        border: 1px solid  rgb(124, 124, 124);  
+   }   
+ .fotbannermain{
+    width: 100%;
+    margin:8px  8px  ;  
+    display: flex;
+    align-items:  center;
+    justify-content: space-between;
+    height: 66px;
+    padding:10px 24px 7px 15px ;
+    background-image :linear-gradient(90deg, rgb(175, 40, 150), rgb(80, 155, 245));
+ }
+.foth1{
+    color: white;
+    font-family: bsize;
+        line-height: 20px;
+        font-size: 14px;
+        padding-bottom: 2px;
+        font-weight: 700;  
+}
+.foth2{
+    color: white;
+    font-family: usize;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 400;  
+    height: 22px;
+}
+.mainen{
+    position: absolute;
+    bottom:77px;
+}
+ .createscroll {
+        height: 48.5%;
+        overflow-y: auto;
+    }  
+    footer{
+        padding: 8px 32px 40px;
+        margin-bottom: 32px;
+    }
+    .copyright{
+        padding: 0px;
+    }
+    hr{
+        margin-bottom: 40px;
+    }
+    .footers{
+        padding: 0px;
+    }
+    .company{
+        margin-right: 12px;
+        margin-top: 34px;
+    }
+    .thecompanymain {
+        margin-bottom: 28px;
+    }
+}       
+
+
+@media (min-width:1644px){
+    .card img{
+        width: 198px;
+       }
+
+       #imga{
+        width: 198px;
+    } 
+    .maincard{
+        width: 242.83px;
+    }
+}
+@media (min-width:1725px){
+    .card img{
+        width: 218.83px;
+       }
+
+       #imga{
+        width: 218.83px;
+    } 
+    .maincard{
+        width: 222px;
+        margin-right: 20px;
+    }
+    .boss{
+        height: 84.2vh;
+    }
+     
+    .fotbannermain {
+        padding: 9px 24px 7px 15px;
+        
+    }
+    .showall{
+        margin-right: 1px;
+    }
+}
