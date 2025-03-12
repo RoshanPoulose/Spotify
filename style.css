@@ -581,6 +581,15 @@ hr{
     #fpre{
         font-size: 14px;
     }
+    #preh2{
+        white-space: nowrap;
+    }
+    #fpre{
+        white-space: nowrap;
+    }
+    .logsin{
+        white-space: nowrap;
+    }
     .themainboss{
         display: flex;
         flex-direction: row;
